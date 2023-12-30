@@ -1,26 +1,26 @@
 .Apply-section {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .Apply-content {
-    margin-top: 5rem;
-    padding: 0 6.25rem;
-    text-align: center;
+  margin-top: 5rem;
+  padding: 0 6.25rem;
+  /* text-align: center; */
 }
 
 .Apply-closed-icon {
-    font-weight: 400;
-    font-size: 4rem;
-    color: #000000;
-    margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #000000;
+  margin-bottom: 1rem;
 }
 
 .Apply-closed-text {
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: #000000;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #000000;
 }
 
 .Apply-form p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
