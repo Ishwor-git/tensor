@@ -29,7 +29,7 @@ export default function ApplyForm() {
 
   const handleSubmit = () => {
     const data = new FormData();
-    const rolesNode = document.querySelector(".section-role").childNodes;
+    const rolesNode = document.querySelector(".section-roles").childNodes;
 
     data.append("name", name);
     data.append("email", email);
@@ -61,42 +61,48 @@ export default function ApplyForm() {
     <>
       <div className="Apply-form">
         <form action="#" method="post" className="form">
-          <label htmlFor="title">Personal details </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full Name"
-            value={name}
-            onChange={(e) => {
-              setname(e.target.value);
-            }}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => {
-              setemail(e.target.value);
-            }}
-            required
-          />
-          <input
-            type="text"
-            name="Roll no"
-            id="clzRollNo"
-            placeholder="Campus Roll Number"
-            value={rollNo}
-            onChange={(e) => {
-              setrollNo(e.target.value);
-            }}
-            required
-          />
-          <label htmlFor="title">Roles and skills </label>
-          <div className="section-role">
+          <label className="title" htmlFor="title">
+            Personal details{" "}
+          </label>
+          <div className="section section-title">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              value={name}
+              onChange={(e) => {
+                setname(e.target.value);
+              }}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => {
+                setemail(e.target.value);
+              }}
+              required
+            />
+            <input
+              type="text"
+              name="Roll no"
+              id="clzRollNo"
+              placeholder="Campus Roll Number"
+              value={rollNo}
+              onChange={(e) => {
+                setrollNo(e.target.value);
+              }}
+              required
+            />
+          </div>
+          <label className="title" htmlFor="title">
+            Roles and skills{" "}
+          </label>
+          <div className="section section-roles">
             <label className="question" htmlFor="questionRoles" id="question1">
               Which role are you interested in ?
             </label>
@@ -170,63 +176,73 @@ export default function ApplyForm() {
               />
             </span>
           </div>
-          <label className="question" htmlFor="questionSkills">
-            Any specific skill set that can be utilized in above mentioned
-            domains? (optional)
+          <div className="section">
+            <label className="question" htmlFor="questionSkills">
+              Any specific skill set that can be utilized in above mentioned
+              domains? (optional)
+            </label>
+            <textarea
+              name="skillQuestion1"
+              id="skillQuestion1"
+              cols="30"
+              rows="5"
+              value={Question1}
+              onChange={(e) => {
+                setQuestion1(e.target.value);
+              }}
+            ></textarea>
+          </div>
+          <label className="title" htmlFor="title">
+            Personal Expression{" "}
           </label>
-          <textarea
-            name="skillQuestion1"
-            id="skillQuestion1"
-            cols="30"
-            rows="5"
-            value={Question1}
-            onChange={(e) => {
-              setQuestion1(e.target.value);
-            }}
-          ></textarea>
-          <label htmlFor="title">Personal Expression </label>
-          <label className="question" htmlFor="questionSkills">
-            Why do you want to be part of this community?
-          </label>
-          <textarea
-            name="skillQuestion1"
-            id="skillQuestion1"
-            cols="30"
-            rows="5"
-            value={Question2}
-            onChange={(e) => {
-              setQuestion2(e.target.value);
-            }}
-            required
-          ></textarea>
-          <label className="question" htmlFor="questionSkills">
-            How do you plan to contribute to the community as a part of the
-            above mentioned domains?
-          </label>
-          <textarea
-            name="skillQuestion1"
-            id="skillQuestion1"
-            cols="30"
-            rows="5"
-            value={Question3}
-            onChange={(e) => {
-              setQuestion3(e.target.value);
-            }}
-            required
-          ></textarea>
-          <label className="question" htmlFor="questionSkills">
-            Any query or feedbacks ?
-          </label>
-          <textarea
-            name="skillQuestion1"
-            id="skillQuestion1"
-            cols="30"
-            rows="5"
-            value={feedback}
-            onChange={(e) => {
-              setFeedback(e.target.value);
-            }}
-          ></textarea>
+          <div className="section">
+            <label className="question" htmlFor="questionSkills">
+              Why do you want to be part of this community?
+            </label>
+            <textarea
+              name="skillQuestion1"
+              id="skillQuestion1"
+              cols="30"
+              rows="5"
+              value={Question2}
+              onChange={(e) => {
+                setQuestion2(e.target.value);
+              }}
+              required
+            ></textarea>
+          </div>
+          <div className="section">
+            <label className="question" htmlFor="questionSkills">
+              How do you plan to contribute to the community as a part of the
+              above mentioned domains?
+            </label>
+            <textarea
+              name="skillQuestion1"
+              id="skillQuestion1"
+              cols="30"
+              rows="5"
+              value={Question3}
+              onChange={(e) => {
+                setQuestion3(e.target.value);
+              }}
+              required
+            ></textarea>
+          </div>
+          <div className="section">
+            <label className="question" htmlFor="questionSkills">
+              Any query or feedbacks ?
+            </label>
+            <textarea
+              name="skillQuestion1"
+              id="skillQuestion1"
+              cols="30"
+              rows="5"
+              value={feedback}
+              onChange={(e) => {
+                setFeedback(e.target.value);
+              }}
+            ></textarea>
+          </div>
           <button className="button-submit" onClick={handleSubmit}>
             Submit
           </button>

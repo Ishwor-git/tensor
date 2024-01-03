@@ -3,14 +3,25 @@
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+  width: 50vw;
+  background: linear-gradient(135deg, rgba(225, 225, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 225, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0 0, 0.37);
+  /* border: 1px solid orangered; */
+  /* align-self: center; */
 }
+
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 5vh;
+  align-items: flex-start;
   /* border: 1px solid red; */
-  width: 80vh;
+  width: 40vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 input {
@@ -21,13 +32,17 @@ input {
   padding: 0.7rem 0.7rem;
   font-size: 1.25rem;
   margin-bottom: 0.8rem;
-  width: 50vh;
+  width: 30vw;
 }
 
 label {
   font-size: 1.25rem;
-  margin-bottom: 0.8rem;
+}
+
+label.title {
+  margin-bottom: 1vh;
   font-weight: bold;
+  align-self: center;
 }
 
 label.question {
@@ -42,7 +57,7 @@ label.role {
   margin-top: auto;
   margin-bottom: auto;
   align-self: flex-start;
-  width: 45vh;
+  width: 30vw;
 }
 
 span {
@@ -70,30 +85,40 @@ input.speical {
   border: none;
   outline: none;
   border-bottom: solid 1px #807c7c;
-  width: 40vh;
+  width: 20vw;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5vh;
+  /* border: 1px solid blue; */
 }
 
 textarea {
   border: 1px solid #807c7c;
   border-radius: 10px;
   outline: none;
-  padding: 0.7rem 0;
+  padding: 0.5rem;
   font-size: 1.25rem;
   margin-bottom: 0.9rem;
-  width: 80vh;
+  width: 40vw;
   height: 20vh;
   align-self: flex-start;
 }
 
 .section-roles {
-  display: flex;
-  flex-direction: column;
+  /* align-self: center; */
   align-items: flex-start;
-  margin-bottom: 1rem;
   text-align: none;
+}
+
+.section-title {
+  align-self: center;
 }
 /* CSS */
 .button-submit {
+  align-self: center;
   background-color: #0a6bff;
   border-radius: 4px;
   border: 0;
@@ -131,5 +156,16 @@ textarea {
   .button-submit {
     padding: 16px 44px;
     min-width: 150px;
+  }
+  .Apply-form {
+    font-size: 1.25rem;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 375) {
+  .Apply-form {
+    font-size: 1rem;
+    width: 90vw;
   }
 }
