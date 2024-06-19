@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tensor-website/static/css/main.535f0fc0.css",
+    "main.js": "/tensor-website/static/js/main.e76865f2.js",
+    "static/js/787.23935b6d.chunk.js": "/tensor-website/static/js/787.23935b6d.chunk.js",
+    "static/media/logo.svg": "/tensor-website/static/media/logo.9eeb74761a99c979e897e059e1578c2e.svg",
+    "static/media/about-card-img.svg": "/tensor-website/static/media/about-card-img.bbd9339db7616c8b0142790a6f0e84b6.svg",
+    "static/media/discord-icon.svg": "/tensor-website/static/media/discord-icon.7ee8ad0cdfbc0d341f65c1e2359b0e1a.svg",
+    "static/media/linkedin-icon.svg": "/tensor-website/static/media/linkedin-icon.2ba72c7efdf48ef01970e504f1891a1a.svg",
+    "static/media/instagram-icon.svg": "/tensor-website/static/media/instagram-icon.2a803a5579e5c6a65ba22eb4325e9102.svg",
+    "index.html": "/tensor-website/index.html",
+    "static/media/github-icon.svg": "/tensor-website/static/media/github-icon.da6cf4e65f9327e70900b7cd218af57d.svg",
+    "static/media/facebook-icon.svg": "/tensor-website/static/media/facebook-icon.9c5b8567428a23d6d8ba348e5dc52cdb.svg",
+    "static/media/previous.svg": "/tensor-website/static/media/previous.25c2c5730d43bf4c3eecd36eb72dc485.svg",
+    "static/media/index.cjs": "/tensor-website/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "static/media/next.svg": "/tensor-website/static/media/next.b64804c1339dd2fc16f82f90a8b8e315.svg",
+    "static/media/title-border.svg": "/tensor-website/static/media/title-border.dabf17d1d4f2063a541c3a9f3cd3ee79.svg",
+    "main.535f0fc0.css.map": "/tensor-website/static/css/main.535f0fc0.css.map",
+    "main.e76865f2.js.map": "/tensor-website/static/js/main.e76865f2.js.map",
+    "787.23935b6d.chunk.js.map": "/tensor-website/static/js/787.23935b6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.535f0fc0.css",
+    "static/js/main.e76865f2.js"
+  ]
+}
